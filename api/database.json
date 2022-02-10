@@ -63,35 +63,203 @@
             "address": "5 Fairfield Drive"
         }
     ],
-    "distributors": [{
+    "distributors": [
+        {
+            "id": 1,
+            "name": "Teklist",
+            "city": "Montgomery",
+            "state": "Alabama",
+            "address": "9 Rieder Hill"
+        }, 
+        {
+            "id": 2,
+            "name": "Yadel",
+            "city": "Tampa",
+            "state": "Florida",
+            "address": "6 Shopko Circle"
+        }, 
+        {
+            "id": 3,
+            "name": "Yabox",
+            "city": "Miami",
+            "state": "Florida",
+            "address": "1950 Mariners Cove Pass"
+        }, 
+        {
+            "id": 4,
+            "name": "Trudeo",
+            "city": "Washington",
+            "state": "District of Columbia",
+            "address": "60 Rusk Plaza"
+        }, 
+        {
+            "id": 5,
+            "name": "Kwilith",
+            "city": "Miami",
+            "state": "Florida",
+            "address": "6351 Lerdahl Point"
+        }
+    ],
+    "nurseries": [
+        {
+            "id": 1,
+            "name": "Oba",
+            "city": "Carol Stream",
+            "state": "Illinois",
+            "address": "8907 Esker Court"
+        },
+        {
+            "id": 2,
+            "name": "Yakijo",
+            "city": "Alexandria",
+            "state": "Virginia",
+            "address": "3 Almo Road"
+        },
+        {
+            "id": 3,
+            "name": "Twimm",
+            "city": "Tacoma",
+            "state": "Washington",
+            "address": "228 Maywood Drive"
+        },
+        {
+            "id": 4,
+            "name": "Gigabox",
+            "city": "Fort Lauderdale",
+            "state": "Florida",
+            "address": "7453 Dahle Terrace"
+        },
+        {
+            "id": 5,
+            "name": "Jabbersphere",
+            "city": "Saint Louis",
+            "state": "Missouri",
+            "address": "54 Scoville Drive"
+        }
+    ],
+    "nurseryFlowers": [{
         "id": 1,
-        "name": "Teklist",
-        "city": "Montgomery",
-        "state": "Alabama",
-        "address": "9 Rieder Hill"
+        "nurseryId": 5,
+        "flowerId": 3
       }, {
         "id": 2,
-        "name": "Yadel",
-        "city": "Tampa",
-        "state": "Florida",
-        "address": "6 Shopko Circle"
+        "nurseryId": 3,
+        "flowerId": 5
       }, {
         "id": 3,
-        "name": "Yabox",
-        "city": "Miami",
-        "state": "Florida",
-        "address": "1950 Mariners Cove Pass"
+        "nurseryId": 4,
+        "flowerId": 1
       }, {
         "id": 4,
-        "name": "Trudeo",
-        "city": "Washington",
-        "state": "District of Columbia",
-        "address": "60 Rusk Plaza"
+        "nurseryId": 3,
+        "flowerId": 1
       }, {
         "id": 5,
-        "name": "Kwilith",
-        "city": "Miami",
-        "state": "Florida",
-        "address": "6351 Lerdahl Point"
-      }]
+        "nurseryId": 4,
+        "flowerId": 3
+      }, {
+        "id": 6,
+        "nurseryId": 2,
+        "flowerId": 1
+      }, {
+        "id": 7,
+        "nurseryId": 1,
+        "flowerId": 5
+      }, {
+        "id": 8,
+        "nurseryId": 4,
+        "flowerId": 3
+      }, {
+        "id": 9,
+        "nurseryId": 2,
+        "flowerId": 3
+      }, {
+        "id": 10,
+        "nurseryId": 4,
+        "flowerId": 5
+      }
+    ],
+    "distributorNurseries": [
+        {
+        "id": 1,
+        "distributorId": 2,
+        "nurseryFlowerId": 8
+      }, {
+        "id": 2,
+        "distributorId": 1,
+        "nurseryFlowerId": 6
+      }, {
+        "id": 3,
+        "distributorId": 3,
+        "nurseryFlowerId": 2
+      }, {
+        "id": 4,
+        "distributorId": 5,
+        "nurseryFlowerId": 8
+      }, {
+        "id": 5,
+        "distributorId": 4,
+        "nurseryFlowerId": 1
+      }, {
+        "id": 6,
+        "distributorId": 5,
+        "nurseryFlowerId": 5
+      }, {
+        "id": 7,
+        "distributorId": 2,
+        "nurseryFlowerId": 8
+      }, {
+        "id": 8,
+        "distributorId": 5,
+        "nurseryFlowerId": 9
+      }, {
+        "id": 9,
+        "distributorId": 1,
+        "nurseryFlowerId": 5
+      }, {
+        "id": 10,
+        "distributorId": 2,
+        "nurseryFlowerId": 7
+      }, {
+        "id": 11,
+        "distributorId": 2,
+        "nurseryFlowerId": 8
+      }, {
+        "id": 12,
+        "distributorId": 1,
+        "nurseryFlowerId": 5
+      }, {
+        "id": 13,
+        "distributorId": 4,
+        "nurseryFlowerId": 9
+      }, {
+        "id": 14,
+        "distributorId": 4,
+        "nurseryFlowerId": 9
+      }, {
+        "id": 15,
+        "distributorId": 4,
+        "nurseryFlowerId": 7
+      }, {
+        "id": 16,
+        "distributorId": 1,
+        "nurseryFlowerId": 7
+      }, {
+        "id": 17,
+        "distributorId": 2,
+        "nurseryFlowerId": 9
+      }, {
+        "id": 18,
+        "distributorId": 3,
+        "nurseryFlowerId": 9
+      }, {
+        "id": 19,
+        "distributorId": 1,
+        "nurseryFlowerId": 4
+      }, {
+        "id": 20,
+        "distributorId": 4,
+        "nurseryFlowerId": 3
+      }
+    ]
 }

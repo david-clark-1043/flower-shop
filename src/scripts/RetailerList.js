@@ -6,7 +6,7 @@ export const RetailerList = () => {
     const retailers = getRetailers()
     // initialize list string
     let html = `<ul>
-                    retailers`
+                    <h2>Retailers</h2>`
     // map the retailer objects to list element strings and add to list
     html += retailers.map(retailer => {
         return `<li id="retailer--${retailer.id}">

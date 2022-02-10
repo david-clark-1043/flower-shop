@@ -62,5 +62,36 @@
             "state": "Minnesota",
             "address": "5 Fairfield Drive"
         }
-    ]
+    ],
+    "distributors": [{
+        "id": 1,
+        "name": "Teklist",
+        "city": "Montgomery",
+        "state": "Alabama",
+        "address": "9 Rieder Hill"
+      }, {
+        "id": 2,
+        "name": "Yadel",
+        "city": "Tampa",
+        "state": "Florida",
+        "address": "6 Shopko Circle"
+      }, {
+        "id": 3,
+        "name": "Yabox",
+        "city": "Miami",
+        "state": "Florida",
+        "address": "1950 Mariners Cove Pass"
+      }, {
+        "id": 4,
+        "name": "Trudeo",
+        "city": "Washington",
+        "state": "District of Columbia",
+        "address": "60 Rusk Plaza"
+      }, {
+        "id": 5,
+        "name": "Kwilith",
+        "city": "Miami",
+        "state": "Florida",
+        "address": "6351 Lerdahl Point"
+      }]
 }

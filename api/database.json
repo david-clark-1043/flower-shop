@@ -1,0 +1,29 @@
+{
+    "flowers": [
+        {
+            "id": 1,
+            "commonName": "Slender Leaf Rattlebox",
+            "color": "Blue"
+        }, 
+        {
+            "id": 2,
+            "commonName": "Woolly Locoweed",
+            "color": "Teal"
+        }, 
+        {
+            "id": 3,
+            "commonName": "Red Rosemallow",
+            "color": "Purple"
+        }, 
+        {
+            "id": 4,
+            "commonName": "Greater Yellowthroat Gilia",
+            "color": "Indigo"
+        }, 
+        {
+            "id": 5,
+            "commonName": "Downy Beach Pea",
+            "color": "Mauv"
+        }
+    ]
+}

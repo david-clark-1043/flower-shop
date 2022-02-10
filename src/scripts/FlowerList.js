@@ -6,7 +6,7 @@ export const FlowerList = () => {
     const flowers = getFlowers()
     // initialize list string
     let html = `<ul>
-                    Flowers`
+                    <h2>Flowers</h2>`
     // map the flower objects to list element strings and add to list
     html += flowers.map(flower => {
         return `<li id="flower--${flower.id}">${flower.color} ${flower.commonName}</li>`

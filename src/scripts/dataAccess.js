@@ -30,6 +30,17 @@ export const fetchRetailers = () => {
         )
 }
 
+export const fetchDistributors = () => {
+    return fetch(`${API}/distributors`)
+        .then(response => response.json())
+        .then(
+            (distributors) => {
+                // Store the external state in application state
+                applicationState.distributors = distributors
+            }
+        )
+}
+
 // get functions
 
 export const getFlowers = () => {
@@ -37,4 +48,7 @@ export const getFlowers = () => {
 }
 export const getRetailers = () => {
     return applicationState.retailers.map(retailer => ({...retailer}))
+}
+export const getDistributors = () => {
+    return applicationState.distributors.map(distributor => ({...distributor}))
 }

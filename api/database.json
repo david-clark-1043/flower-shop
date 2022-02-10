@@ -25,5 +25,42 @@
             "commonName": "Downy Beach Pea",
             "color": "Mauv"
         }
+    ],
+    "retailers": [
+        {
+            "id": 1,
+            "name": "Little Flower Shop",
+            "city": "Biloxi",
+            "state": "Mississippi",
+            "address": "0 7th Street"
+        }, 
+        {
+            "id": 2,
+            "name": "Dig It",
+            "city": "Lancaster",
+            "state": "Pennsylvania",
+            "address": "53 Holmberg Lane"
+        }, 
+        {
+            "id": 3,
+            "name": "Flow Here",
+            "city": "Anniston",
+            "state": "Alabama",
+            "address": "23 Harper Circle"
+        }, 
+        {
+            "id": 4,
+            "name": "Whole Flowers",
+            "city": "Richmond",
+            "state": "Virginia",
+            "address": "6924 Londonderry Junction"
+        }, 
+        {
+            "id": 5,
+            "name": "Seedy Business",
+            "city": "Saint Paul",
+            "state": "Minnesota",
+            "address": "5 Fairfield Drive"
+        }
     ]
 }

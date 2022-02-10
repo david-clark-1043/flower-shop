@@ -5,7 +5,7 @@ import { getFlowers } from "./dataAccess.js"
 export const FlowerList = () => {
     const flowers = getFlowers()
     // initialize list string
-    let html = `<ul class='flowers list'>
+    let html = `<ul>
                     Flowers`
     // map the flower objects to list element strings and add to list
     html += flowers.map(flower => {

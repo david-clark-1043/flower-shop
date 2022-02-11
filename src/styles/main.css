@@ -1,0 +1,22 @@
+.sourceList {
+    list-style-type: none;
+}
+
+.List {
+    border: 1px dashed blue;
+    background-color: rgb(213, 253, 213);
+    border-radius: 2em;
+    margin: 2em;
+}
+
+.retailers > ul > li {
+    margin: 1em;
+}
+
+.address {
+    font-style: italic;
+}
+
+.name {
+    font-weight: bold;
+}

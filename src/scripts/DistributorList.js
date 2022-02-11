@@ -11,8 +11,8 @@ export const DistributorList = () => {
     html += distributors.map(distributor => {
         return `<li id="distributor--${distributor.id}">
                     <div class="distributor name">${distributor.name}</div>
-                    <div class="distributor address_line1">${distributor.address}</div>
-                    <div class="distributor address_line2">${distributor.city} ${distributor.state}</div>    
+                    <div class="distributor address">${distributor.address}</div>
+                    <div class="distributor address">${distributor.city} ${distributor.state}</div>    
                 </li>`
     }).join("")
 

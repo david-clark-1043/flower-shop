@@ -41,6 +41,39 @@ export const fetchDistributors = () => {
         )
 }
 
+export const fetchNurseries = () => {
+    return fetch(`${API}/nurseries`)
+        .then(response => response.json())
+        .then(
+            (nurseries) => {
+                // Store the external state in application state
+                applicationState.nurseries = nurseries
+            }
+        )
+}
+export const fetchNurseryFlowers = () => {
+    return fetch(`${API}/nurseryFlowers`)
+        .then(response => response.json())
+        .then(
+            (nurseryFlowers) => {
+                // Store the external state in application state
+                applicationState.nurseryFlowers = nurseryFlowers
+            }
+        )
+}
+export const fetchDistributorNurseries = () => {
+    return fetch(`${API}/distributorNurseries`)
+        .then(response => response.json())
+        .then(
+            (distributorNurseries) => {
+                // Store the external state in application state
+                applicationState.distributorNurseries = distributorNurseries
+            }
+        )
+}
+
+
+
 // get functions
 
 export const getFlowers = () => {
@@ -51,4 +84,13 @@ export const getRetailers = () => {
 }
 export const getDistributors = () => {
     return applicationState.distributors.map(distributor => ({...distributor}))
+}
+export const getNurseries = () => {
+    return applicationState.nurseries.map(nursery => ({...nursery}))
+}
+export const getNurseryFlowers = () => {
+    return applicationState.nurseryFlowers.map(nurseryFlower => ({...nurseryFlower}))
+}
+export const getDistributorNurseries = () => {
+    return applicationState.distributorNurseries.map(distributorNursery => ({...distributorNursery}))
 }

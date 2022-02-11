@@ -12,12 +12,12 @@
         }, 
         {
             "id": 3,
-            "commonName": "Red Rosemallow",
+            "commonName": "Rosemallow",
             "color": "Purple"
         }, 
         {
             "id": 4,
-            "commonName": "Greater Yellowthroat Gilia",
+            "commonName": "Greater Gilia",
             "color": "Indigo"
         }, 
         {
@@ -32,35 +32,40 @@
             "name": "Little Flower Shop",
             "city": "Biloxi",
             "state": "Mississippi",
-            "address": "0 7th Street"
+            "address": "0 7th Street",
+            "distributorId": 1
         }, 
         {
             "id": 2,
             "name": "Dig It",
             "city": "Lancaster",
             "state": "Pennsylvania",
-            "address": "53 Holmberg Lane"
+            "address": "53 Holmberg Lane",
+            "distributorId": 2
         }, 
         {
             "id": 3,
             "name": "Flow Here",
             "city": "Anniston",
             "state": "Alabama",
-            "address": "23 Harper Circle"
+            "address": "23 Harper Circle",
+            "distributorId": 3
         }, 
         {
             "id": 4,
             "name": "Whole Flowers",
             "city": "Richmond",
             "state": "Virginia",
-            "address": "6924 Londonderry Junction"
+            "address": "6924 Londonderry Junction",
+            "distributorId": 4
         }, 
         {
             "id": 5,
             "name": "Seedy Business",
             "city": "Saint Paul",
             "state": "Minnesota",
-            "address": "5 Fairfield Drive"
+            "address": "5 Fairfield Drive",
+            "distributorId": 5
         }
     ],
     "distributors": [
@@ -180,11 +185,7 @@
       }
     ],
     "distributorNurseries": [
-        {
-        "id": 1,
-        "distributorId": 2,
-        "nurseryFlowerId": 8
-      }, {
+      {
         "id": 2,
         "distributorId": 1,
         "nurseryFlowerId": 6
@@ -195,7 +196,7 @@
       }, {
         "id": 4,
         "distributorId": 5,
-        "nurseryFlowerId": 8
+        "nurseryFlowerId": 7
       }, {
         "id": 5,
         "distributorId": 4,
@@ -203,7 +204,7 @@
       }, {
         "id": 6,
         "distributorId": 5,
-        "nurseryFlowerId": 5
+        "nurseryFlowerId": 2
       }, {
         "id": 7,
         "distributorId": 2,
@@ -225,18 +226,10 @@
         "distributorId": 2,
         "nurseryFlowerId": 8
       }, {
-        "id": 12,
-        "distributorId": 1,
-        "nurseryFlowerId": 5
-      }, {
         "id": 13,
         "distributorId": 4,
         "nurseryFlowerId": 9
-      }, {
-        "id": 14,
-        "distributorId": 4,
-        "nurseryFlowerId": 9
-      }, {
+      },{
         "id": 15,
         "distributorId": 4,
         "nurseryFlowerId": 7

@@ -16,29 +16,34 @@ export const RetailerList = () => {
     // map the retailer objects to list element strings and add to list
     html += retailers.map(retailer => {
         let retailerHTML = `<li id="retailer--${retailer.id}">
-                    <div class="retailer name">${retailer.name}</div>
-                    <div class="retailer address_line1">${retailer.address}</div>
-                    <div class="retailer address_line2">${retailer.city} ${retailer.state}</div>`    
+                            ${retailerInfo(retailer)}`    
                 
         // get distributor retailer sources from
         const distributor = distributors.find(distributor => distributor.id === retailer.distributorId)
         // add distributor to html
-        retailerHTML += `<div class="distributor name">Distributor: ${distributor.name}</div>`
+        retailerHTML += `<div class="distributor name">Distributor: ${distributor.name} - Available Flowers:</div>`
     
-        // get nurseries distributor buys from
+        // get nurseryFlower pairs distributor buys
         const matchedDistributorNurseries = distributorNurseries.filter(distributorNursery => distributorNursery.distributorId === distributor.id)
-        const matchedNurseries = matchedDistributorNurseries.map(pair => {
-            const nursery = nurseries.find(nursery => nursery.id === pair.nurseryId)
-            return `<div class="nursery name">Source nursery: ${nursery.name}</div>`
+        
+        const matchedNurseryFlowers = matchedDistributorNurseries.map(distributorNursery => {
+            const match = nurseryFlowers.find(nurseryFlower => nurseryFlower.id === distributorNursery.nurseryFlowerId)
+            return match
+        })
+
+        retailerHTML += "<ul class='sourceList'>"
+        retailerHTML += matchedNurseryFlowers.map(nurseryFlower => {
+            // get flower of nursery flower pair
+            const flower = flowers.find(flower => nurseryFlower.flowerId === flower.id)
+            // get nursery of nurseryFlower pairs
+            const nursery = nurseries.find(nursery => nurseryFlower.nurseryId === nursery.id)
+            return `<li class="nurseryFlower">${flower.color} ${flower.commonName} from ${nursery.name}</li>`
         }).join("")
 
-        // add list of nurseries to html
-        retailerHTML += matchedNurseries
+        retailerHTML += "</ul></li>"
 
-        // get flowers distributor buys
-        
 
-        // add flowers available at retailer based on flowers from distributor
+        return retailerHTML
     }).join("")
 
 
@@ -47,4 +52,10 @@ export const RetailerList = () => {
     html += '</ul>'
 
     return html
+}
+
+const retailerInfo = (retailer) => {
+    return `<div class="retailer name">${retailer.name}</div>
+    <div class="retailer address">${retailer.address}</div>
+    <div class="retailer address">${retailer.city} ${retailer.state}</div>`    
 }
